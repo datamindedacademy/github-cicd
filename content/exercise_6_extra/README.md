@@ -2,6 +2,9 @@
 
 This workflow is designed to heavily tax the runner using the `stress-ng` tool. Follow the steps below to set up and run this workflow in a Gitpod workspace and observe the runner's processing.
 
+### Documentation link
+[GitHub Actions - Your Own Self-Hosted Runner](https://docs.github.com/en/actions/hosting-your-own-runners/managing-self-hosted-runners/adding-self-hosted-runners)
+
 
 ## Task
 

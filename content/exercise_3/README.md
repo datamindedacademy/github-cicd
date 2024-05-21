@@ -3,6 +3,9 @@
 This exercise aims to demonstrate how to set up a CI/CD pipeline using GitHub Actions. We will build a Docker image, use secrets for sensitive information, and trigger the workflow on merging into the master branch.
 
 
+### Documentation link
+[GitHub Actions Secrets](https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions)
+
 ## Files to Work With
 
 1. **Dockerfile**: The dockerfile that is responsible for building a simple API server

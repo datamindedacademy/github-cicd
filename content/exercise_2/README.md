@@ -2,6 +2,9 @@
 
 Create a GitHub Actions workflow that is triggered on pull requests to the master branch. This workflow should run unit tests and lint Python code.
 
+### Documentation link
+[GitHub Actions Triggers](https://docs.github.com/en/actions/using-workflows/triggering-a-workflow)
+
 ## Files to Work With
 
 1. **bad_code.py**: A Python script with style issues.

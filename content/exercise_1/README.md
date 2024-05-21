@@ -2,6 +2,9 @@
 
 This exercise introduces you to GitHub Actions, a powerful tool to automate, customize, and execute your software development workflows right in your repository.
 
+### Documentation link
+[GitHub Actions Overview](https://docs.github.com/en/actions/using-workflows/about-workflows)
+
 ## Files to Work With
 
 1. **exercise_1.yaml**: A Python script with style issues.

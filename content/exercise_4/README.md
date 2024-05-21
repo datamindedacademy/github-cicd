@@ -2,6 +2,9 @@
 
 In this tutorial, you will learn how to set up a basic CI/CD pipeline using GitHub Actions. We'll walk through a simple example where we define a workflow to build and deploy our application in multiple environments.
 
+### Documentation link
+[GitHub Actions Environments](https://docs.github.com/en/actions/deployment/targeting-different-environments/using-environments-for-deployment)
+
 ## Task
 
 You are required to set up a basic workflow in your GitHub repository that triggers on every merge into `master`  to build and deploy an application in protected environments as well as chaining jobs one after another to show dependencies between jobs.
