@@ -1,0 +1,50 @@
+name: Test and Update Badge
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.12'
+    - name: Install dependencies
+      run: pip install pytest
+    - name: Run tests
+      run: |
+        pytest --junitxml=result.xml exercise_2
+      continue-on-error: true
+    - name: Check test result
+      id: check
+      run: |
+        if grep -q "<failure" result.xml; then
+          echo "STATUS=failing" >> $GITHUB_ENV
+        else
+          echo "STATUS=passing" >> $GITHUB_ENV
+        fi
+    - name: Update README with badge
+      run: |
+        if [ "$STATUS"  == "passing" ]; then
+          badge_url="https://img.shields.io/badge/tests-passing-brightgreen"
+        else
+          badge_url="https://img.shields.io/badge/tests-failing-red"
+        fi
+        readme_path="README.md"
+        actions_url="https://github.com/${{ github.repository }}/actions/workflows/test-and-badge.yml"
+        badge_md="[![Test Status](${badge_url})](${actions_url})"
+        sed -i '3s|.*|'"$badge_md"'|' $readme_path
+    - name: Commit updated README
+      run: |
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+        git add README.md
+        git commit -m "Update test status badge [skip ci]"
+        git push origin HEAD:master
+      if: always()

@@ -1,4 +1,4 @@
-# GitHub Actions: Hello World
+# Github Actions - Hello World
 
 This exercise introduces you to GitHub Actions, a powerful tool to automate, customize, and execute your software development workflows right in your repository.
 

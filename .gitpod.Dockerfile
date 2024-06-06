@@ -1,6 +1,6 @@
 FROM gitpod/workspace-python-3.12
 
-ENV TRIGGER_REBUILD 5
+ENV TRIGGER_REBUILD 6
 
 USER root
 

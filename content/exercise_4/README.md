@@ -1,4 +1,4 @@
-# GitHub Actions multi stage CD to protected environments
+# Github Actions - Multi stage CD to protected environments
 
 In this tutorial, you will learn how to set up a basic CI/CD pipeline using GitHub Actions. We'll walk through a simple example where we define a workflow to build and deploy our application in multiple environments.
 

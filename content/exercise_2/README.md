@@ -1,4 +1,4 @@
-# Python CI Workflow Exercise
+# Github Actions - Python CI Workflow Exercise
 
 Create a GitHub Actions workflow that is triggered on pull requests to the master branch. This workflow should run unit tests and lint Python code.
 
