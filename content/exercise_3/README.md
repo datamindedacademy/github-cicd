@@ -21,7 +21,7 @@ You are required to set up a basic workflow in your GitHub repository that trigg
 ### 1. Set Up GitHub Secrets
 You need to set up the following secrets in your GitHub repository:
 - `DOCKER_USERNAME`: Your Docker Hub username.
-- `DOCKER_TOKEN`: Your Docker Hub password.
+- `DOCKER_TOKEN`: Your Docker Hub token.
 
 Generate the above by creating an account in Docker then finding instructions on how to generate a token [here](https://docs.docker.com/security/for-developers/access-tokens) 
 
