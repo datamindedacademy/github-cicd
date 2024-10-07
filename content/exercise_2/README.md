@@ -33,9 +33,6 @@ After seeing the workflow run, check the logs of the run. Based on the issues fo
 - `pull_request`: Triggers the workflow on pull requests to the master branch.
 - `working-directory`: Sets the working directory for the job steps. No need to use quotes for the path and the path is relative to the repository root.
 ## Added commands to run the tests and linting
-- black:
-   - `black --check .` Runs the black code formatter in check mode.
-   - `black .` Runs the black code formatter to format the code.
 - flake8:
     - `flake8 .` Runs the flake8 linter and outputs any issues.
 - pytest: Runs the unit tests in the repository.

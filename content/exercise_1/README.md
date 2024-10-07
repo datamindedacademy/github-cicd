@@ -7,7 +7,7 @@ This exercise introduces you to GitHub Actions, a powerful tool to automate, cus
 
 ## Files to Work With
 
-1. **exercise_1.yaml**: A Python script with style issues.
+1. **exercise_1.yaml**: A hello world workflow file.
 
 
 ## Task
