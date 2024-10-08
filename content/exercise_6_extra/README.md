@@ -12,7 +12,7 @@ You are required to set up a basic workflow in your GitHub repository that on ev
 
 ## Instructions
 
-1. On every push to main, the workflow should run
+1. On every push to `master`, the workflow should run
 2. The workflow should push a commit to `master` branch that updates the badge in the README file to say whether the pytest from exercise 2 passed or failed.
 3. (Optional) You can just add a badge to the end of the file, or use regex/point at a certain line in README to update the badge.
 
